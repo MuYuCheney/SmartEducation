@@ -1,0 +1,95 @@
+2024-05-16 10:13:21 | INFO | model_worker | Loading the model ['chatglm3-6b'] on worker a1d115a0 ...
+2024-05-16 10:13:21 | ERROR | stderr | Loading checkpoint shards:   0%|                                                                                                                                                                              | 0/7 [00:00<?, ?it/s]
+2024-05-16 10:13:21 | ERROR | stderr | Loading checkpoint shards:  14%|███████████████████████▋                                                                                                                                              | 1/7 [00:00<00:02,  2.66it/s]
+2024-05-16 10:13:22 | ERROR | stderr | Loading checkpoint shards:  29%|███████████████████████████████████████████████▍                                                                                                                      | 2/7 [00:00<00:01,  2.65it/s]
+2024-05-16 10:13:22 | ERROR | stderr | Loading checkpoint shards:  43%|███████████████████████████████████████████████████████████████████████▏                                                                                              | 3/7 [00:01<00:01,  2.70it/s]
+2024-05-16 10:13:22 | ERROR | stderr | Loading checkpoint shards:  57%|██████████████████████████████████████████████████████████████████████████████████████████████▊                                                                       | 4/7 [00:01<00:01,  2.76it/s]
+2024-05-16 10:13:23 | ERROR | stderr | Loading checkpoint shards:  71%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                               | 5/7 [00:01<00:00,  2.75it/s]
+2024-05-16 10:13:23 | ERROR | stderr | Loading checkpoint shards:  86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                       | 6/7 [00:02<00:00,  2.75it/s]
+2024-05-16 10:13:23 | ERROR | stderr | Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:02<00:00,  3.06it/s]
+2024-05-16 10:13:23 | ERROR | stderr | Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:02<00:00,  2.86it/s]
+2024-05-16 10:13:23 | ERROR | stderr | 
+2024-05-16 10:13:28 | INFO | model_worker | Register to controller
+2024-05-16 10:13:28 | ERROR | stderr | Process model_worker - chatglm3-6b:
+2024-05-16 10:13:28 | ERROR | stderr | Traceback (most recent call last):
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+2024-05-16 10:13:28 | ERROR | stderr |     sock = connection.create_connection(
+2024-05-16 10:13:28 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+2024-05-16 10:13:28 | ERROR | stderr |     raise err
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+2024-05-16 10:13:28 | ERROR | stderr |     sock.connect(sa)
+2024-05-16 10:13:28 | ERROR | stderr | ConnectionRefusedError: [Errno 111] Connection refused
+2024-05-16 10:13:28 | ERROR | stderr | 
+2024-05-16 10:13:28 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-05-16 10:13:28 | ERROR | stderr | 
+2024-05-16 10:13:28 | ERROR | stderr | Traceback (most recent call last):
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+2024-05-16 10:13:28 | ERROR | stderr |     response = self._make_request(
+2024-05-16 10:13:28 | ERROR | stderr |                ^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+2024-05-16 10:13:28 | ERROR | stderr |     conn.request(
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/connection.py", line 395, in request
+2024-05-16 10:13:28 | ERROR | stderr |     self.endheaders()
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/http/client.py", line 1289, in endheaders
+2024-05-16 10:13:28 | ERROR | stderr |     self._send_output(message_body, encode_chunked=encode_chunked)
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/http/client.py", line 1048, in _send_output
+2024-05-16 10:13:28 | ERROR | stderr |     self.send(msg)
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/http/client.py", line 986, in send
+2024-05-16 10:13:28 | ERROR | stderr |     self.connect()
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/connection.py", line 243, in connect
+2024-05-16 10:13:28 | ERROR | stderr |     self.sock = self._new_conn()
+2024-05-16 10:13:28 | ERROR | stderr |                 ^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/connection.py", line 218, in _new_conn
+2024-05-16 10:13:28 | ERROR | stderr |     raise NewConnectionError(
+2024-05-16 10:13:28 | ERROR | stderr | urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fe710a7e3d0>: Failed to establish a new connection: [Errno 111] Connection refused
+2024-05-16 10:13:28 | ERROR | stderr | 
+2024-05-16 10:13:28 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2024-05-16 10:13:28 | ERROR | stderr | 
+2024-05-16 10:13:28 | ERROR | stderr | Traceback (most recent call last):
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+2024-05-16 10:13:28 | ERROR | stderr |     resp = conn.urlopen(
+2024-05-16 10:13:28 | ERROR | stderr |            ^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+2024-05-16 10:13:28 | ERROR | stderr |     retries = retries.increment(
+2024-05-16 10:13:28 | ERROR | stderr |               ^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+2024-05-16 10:13:28 | ERROR | stderr |     raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+2024-05-16 10:13:28 | ERROR | stderr |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr | urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.110.131', port=20001): Max retries exceeded with url: /register_worker (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe710a7e3d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-05-16 10:13:28 | ERROR | stderr | 
+2024-05-16 10:13:28 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2024-05-16 10:13:28 | ERROR | stderr | 
+2024-05-16 10:13:28 | ERROR | stderr | Traceback (most recent call last):
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+2024-05-16 10:13:28 | ERROR | stderr |     self.run()
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/multiprocessing/process.py", line 108, in run
+2024-05-16 10:13:28 | ERROR | stderr |     self._target(*self._args, **self._kwargs)
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/rag/Langchain-Chatchat/startup.py", line 389, in run_model_worker
+2024-05-16 10:13:28 | ERROR | stderr |     app = create_model_worker_app(log_level=log_level, **kwargs)
+2024-05-16 10:13:28 | ERROR | stderr |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/rag/Langchain-Chatchat/startup.py", line 217, in create_model_worker_app
+2024-05-16 10:13:28 | ERROR | stderr |     worker = ModelWorker(
+2024-05-16 10:13:28 | ERROR | stderr |              ^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/fastchat/serve/model_worker.py", line 102, in __init__
+2024-05-16 10:13:28 | ERROR | stderr |     self.init_heart_beat()
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/fastchat/serve/base_model_worker.py", line 79, in init_heart_beat
+2024-05-16 10:13:28 | ERROR | stderr |     self.register_to_controller()
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/fastchat/serve/base_model_worker.py", line 96, in register_to_controller
+2024-05-16 10:13:28 | ERROR | stderr |     r = requests.post(url, json=data)
+2024-05-16 10:13:28 | ERROR | stderr |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/requests/api.py", line 115, in post
+2024-05-16 10:13:28 | ERROR | stderr |     return request("post", url, data=data, json=json, **kwargs)
+2024-05-16 10:13:28 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/requests/api.py", line 59, in request
+2024-05-16 10:13:28 | ERROR | stderr |     return session.request(method=method, url=url, **kwargs)
+2024-05-16 10:13:28 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+2024-05-16 10:13:28 | ERROR | stderr |     resp = self.send(prep, **send_kwargs)
+2024-05-16 10:13:28 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+2024-05-16 10:13:28 | ERROR | stderr |     r = adapter.send(request, **kwargs)
+2024-05-16 10:13:28 | ERROR | stderr |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-05-16 10:13:28 | ERROR | stderr |   File "/home/util/anaconda3/envs/langchain_chatchat/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+2024-05-16 10:13:28 | ERROR | stderr |     raise ConnectionError(e, request=request)
+2024-05-16 10:13:28 | ERROR | stderr | requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.110.131', port=20001): Max retries exceeded with url: /register_worker (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe710a7e3d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
